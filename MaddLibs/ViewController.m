@@ -30,24 +30,30 @@
 }
 //    executes after the stuff on the screen has been typed has loaded
 // button tapped
-- (IBAction)loadButton:(id)sender {
+//- (IBAction)loadButton:(id)sender {
 
+
+    
+//NSLog(@"One day while walking down the street %@ stepped on a %@, and %@ ed. THIS IS %@ !“.  %@ed their %@, and decided to sit %@ a tree.",nameOne, nounOne, verbOne, adjectiveOne, nameOne, nounTwo, prepositionOne );
+    
+    
+    
+//}
+- (IBAction)storyButt:(id)sender {
+   
     NSString *nounOne = self.nounOne.text,
-            *nameOne = self.nameOne.text,
-            *verbOne = self.verbOne.text,
-            *adjectiveOne = self.adjectiveOne.text,
-            *prepositionOne = self.prepositionOne.text,
-            *nounTwo = self.nounTwo.text;
-    
-NSLog(@"One day while walking down the street %@ stepped on a %@, and %@ ed. THIS IS %@ !“.  %@ed their %@, and decided to sit %@ a tree.",nameOne, nounOne, verbOne, adjectiveOne, nameOne, nounTwo, prepositionOne );
-    
-    
-    
+    *nameOne = self.nameOne.text,
+    *verbOne = self.verbOne.text,
+    *adjectiveOne = self.adjectiveOne.text,
+    *prepositionOne = self.prepositionOne.text,
+    *nounTwo = self.nounTwo.text;
+    self.storyLabel.text = [NSString stringWithFormat:@"One day while walking down the street %@ stepped on a %@, and %@ ed. THIS IS %@ !“.  %@ed their %@, and decided to sit %@ a tree.", nameOne, nounOne, verbOne, adjectiveOne, nameOne, nounTwo, prepositionOne ];
+
 }
 
 // switch toggled
-- (IBAction)natButt:(id)sender {
-    NSLog(@"value changed");
-}
+//- (IBAction)natButt:(id)sender {
+//    NSLog(@"value changed");
+//}
 
 @end
