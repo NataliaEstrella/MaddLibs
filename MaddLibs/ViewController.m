@@ -41,7 +41,8 @@
 //}
 - (IBAction)storyButt:(id)sender {
     
-    @property(nonatomic) NSInteger numberOfLines =0;
+    self.storyLabel.numberOfLines = 0;
+
     
 
    
