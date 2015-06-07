@@ -32,6 +32,14 @@
                                     <rect key="frame" x="109" y="144" width="181" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Verb" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6Z-sq-NRf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="190" width="181" height="30"/>
+                                </variation>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Adjective" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO9-wk-hds">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,21 +73,7 @@
                                     <rect key="frame" x="140" y="20" width="121" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK6-YZ-y82">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="163" y="562" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="loadButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KOE-0I-AS9"/>
-                                    <action selector="outside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="MEc-dD-D46"/>
-                                    <action selector="storyButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IFd-RF-jal"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFx-1h-mzq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFx-1h-mzq">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -88,40 +82,45 @@
                                     <rect key="frame" x="32" y="367" width="303" height="146"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Verb" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6Z-sq-NRf">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK6-YZ-y82">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Your Story">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="110" y="190" width="181" height="30"/>
+                                    <rect key="frame" x="160" y="562" width="72" height="30"/>
                                 </variation>
-                            </textField>
+                                <connections>
+                                    <action selector="outside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="MEc-dD-D46"/>
+                                    <action selector="storyButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IFd-RF-jal"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="l70-iA-NnT"/>
                                 <exclude reference="HFQ-Yj-Gsn"/>
+                                <exclude reference="L6Z-sq-NRf"/>
                                 <exclude reference="YO9-wk-hds"/>
                                 <exclude reference="hrX-Jf-6r1"/>
                                 <exclude reference="WPX-nH-0LB"/>
                                 <exclude reference="487-mR-Wx0"/>
-                                <exclude reference="YK6-YZ-y82"/>
                                 <exclude reference="YFx-1h-mzq"/>
-                                <exclude reference="L6Z-sq-NRf"/>
+                                <exclude reference="YK6-YZ-y82"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="l70-iA-NnT"/>
                                 <include reference="HFQ-Yj-Gsn"/>
+                                <include reference="L6Z-sq-NRf"/>
                                 <include reference="YO9-wk-hds"/>
                                 <include reference="hrX-Jf-6r1"/>
                                 <include reference="WPX-nH-0LB"/>
                                 <include reference="487-mR-Wx0"/>
-                                <include reference="YK6-YZ-y82"/>
                                 <include reference="YFx-1h-mzq"/>
-                                <include reference="L6Z-sq-NRf"/>
+                                <include reference="YK6-YZ-y82"/>
                             </mask>
                         </variation>
                     </view>

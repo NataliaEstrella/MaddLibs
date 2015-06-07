@@ -40,6 +40,10 @@
     
 //}
 - (IBAction)storyButt:(id)sender {
+    
+    @property(nonatomic) NSInteger numberOfLines =0;
+    
+
    
     NSString *nounOne = self.nounOne.text,
     *nameOne = self.nameOne.text,
