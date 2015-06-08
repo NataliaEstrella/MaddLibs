@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *libLabel;
 @property (weak, nonatomic) IBOutlet UILabel *storyLabel;
 
+
+
 @end
 
 @implementation ViewController
@@ -39,6 +41,9 @@
     
     
 //}
+
+
+
 - (IBAction)storyButt:(id)sender {
     
     self.storyLabel.numberOfLines = 0;
@@ -52,7 +57,7 @@
     *adjectiveOne = self.adjectiveOne.text,
     *prepositionOne = self.prepositionOne.text,
     *nounTwo = self.nounTwo.text;
-    self.storyLabel.text = [NSString stringWithFormat:@"One day while walking down the street %@ stepped on a %@, and %@ ed. THIS IS %@ !“.  %@ed their %@, and decided to sit %@ a tree.", nameOne, nounOne, verbOne, adjectiveOne, nameOne, nounTwo, prepositionOne ];
+    self.storyLabel.text = [NSString stringWithFormat:@"One day while walking down the street %@ stepped on a %@, and %@. THIS IS %@ !“. %@ %@ their %@, and decided to sit %@ a tree.", nameOne, nounOne, verbOne, adjectiveOne, nameOne, verbOne, nounTwo, prepositionOne ];
 
 }
 
